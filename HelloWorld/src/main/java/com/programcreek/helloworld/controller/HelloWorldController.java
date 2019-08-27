@@ -10,9 +10,19 @@ import org.springframework.web.servlet.ModelAndView;
 public class HelloWorldController {
 	String message = "Welcome to Spring MVC!";
  
-	@RequestMapping("/helloworld")
+	@RequestMapping("/Join-us")
 	public String showMessage() {
 		System.out.println("in controller");
-		return "helloworld";
+		return "join-us";
+	}
+	@RequestMapping("/Elite-memebers")
+	public String loginPage()
+	{
+		return "elite-members";
+	}
+	@RequestMapping("/view-elite")
+	public String viewElite()
+	{
+		return "profile";
 	}
 }

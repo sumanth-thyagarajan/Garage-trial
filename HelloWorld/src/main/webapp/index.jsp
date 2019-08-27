@@ -5,15 +5,18 @@ pageEncoding="ISO-8859-1"%>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Spring 4 MVC - HelloWorld Index Page</title>
+<title>Garage  Mechanics</title>
 </head>
-<body>
- 
+<body bgcolor="#F5F5F5">
 	<center>
-		<h2>Hello World</h2>
-		<h3>
-			<a href="helloworld">Click Here</a>
-		</h3>
+		<h2>Garage</h2>
 	</center>
+	<hr>
+	<center><h2>Welcome to Online Garage Service</h2></center>
+	<h3><u>About</u></h3>
+	<p>We are a group of online vehicle enthusiast we help you customize your vehicle. Have you ever thought of building your own vehicle from scratch. </p>
+	<p> Our team comprises of top racers of the world and automotive experts, we help you achieve your dream come true.</p>
+	<h4><a href="Join-us">Click here to join our Garage</a></h4>
+	<h4><a href="Elite-memebers">Mechanics/Elite Memebers Login</a></h4>
 </body>
 </html>
