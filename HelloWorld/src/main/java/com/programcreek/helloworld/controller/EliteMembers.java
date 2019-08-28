@@ -7,6 +7,7 @@ public class EliteMembers {
 	private HashMap<String, String> Users;
 	public EliteMembers() {
 		// TODO Auto-generated constructor stub
+		Users=new HashMap<String, String>();
 		Users.put("TN81z7537", "sumanth@1234");
 		Users.put("TN82x7537", "sumanth@123");
 		Users.put("TN81c7537", "sumanth@12");
