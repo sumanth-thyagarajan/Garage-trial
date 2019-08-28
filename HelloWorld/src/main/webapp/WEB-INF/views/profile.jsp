@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Elite members Homepage</title>
 </head>
-<body>
-Hello
+<body bgcolor="#F5F5F5">
+<h2>This is just a beta application</h2><hr>
+<h4><a href="view-profile">View Profile</a>
+<a href="Logout">Logout</a></h4>
 </body>
 </html>

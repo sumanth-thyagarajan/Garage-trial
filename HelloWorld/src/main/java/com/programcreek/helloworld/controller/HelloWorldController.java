@@ -21,8 +21,34 @@ public class HelloWorldController {
 		return "elite-members";
 	}
 	@RequestMapping("/view-elite")
-	public String viewElite()
+	public String viewElite(@RequestParam("Regno") String regno,@RequestParam("Password") String pass, Model model)
 	{
-		return "profile";
+		if(regno.equals("")||pass.equals(""))
+		{
+			String s="*Please enter valid input*";
+			model.addAttribute("message",s);
+			return "elite-members";
+		}
+		else if(regno.equals("tn81z7537"))
+		{
+			if(pass.equals("sumanth"))
+			{
+				return "profile";
+				
+			}
+			else
+			{
+				String s="*Please enter valid input*";
+				model.addAttribute("message",s);
+				return "elite-members";
+				
+			}
+		}
+		return "elite-members";
+	}
+	@RequestMapping("/Logout")
+	public String viewLogout()
+	{
+		return "home-page";
 	}
 }
