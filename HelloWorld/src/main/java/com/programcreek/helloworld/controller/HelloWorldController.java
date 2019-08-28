@@ -25,7 +25,23 @@ public class HelloWorldController {
 	@RequestMapping("/view-elite")
 	public String viewElite(@RequestParam("Regno") String regno,@RequestParam("Password") String pass, Model model)
 	{
-		if(regno.equals("")||pass.equals(""))
+		EliteMembers em=new EliteMembers();
+		if(em.getReg(regno))
+		{
+			if(pass.equals(em.getpass(regno)))
+			{
+				System.out.println("Pass success");
+				return "profile";
+			}
+		}
+		else 
+		{
+			System.out.println("No regeno found");
+			String s="*Please enter valid input*";
+			model.addAttribute("message",s);
+			return "elite-members";
+		}
+		/*if(regno.equals("")||pass.equals(""))
 		{
 			String s="*Please enter valid input*";
 			model.addAttribute("message",s);
@@ -45,7 +61,8 @@ public class HelloWorldController {
 				return "elite-members";
 				
 			}
-		}
+		}*/
+		
 		String s="*Please enter valid input*";
 		model.addAttribute("message",s);
 		//	return "elite-members";

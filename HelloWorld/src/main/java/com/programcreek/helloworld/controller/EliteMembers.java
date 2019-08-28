@@ -15,10 +15,14 @@ public class EliteMembers {
 		Users.put("TN81b7537", "sumanth@");
 		Users.put("TN81Z7537", "sumanth");
 	}
-	String getkey(String reg)
+	String getpass(String reg)
 	{
 		String s=(String)Users.get(reg);
 		return s;
+	}
+	boolean getReg(String reg)
+	{
+		return Users.containsKey(reg);
 	}
 
 }
