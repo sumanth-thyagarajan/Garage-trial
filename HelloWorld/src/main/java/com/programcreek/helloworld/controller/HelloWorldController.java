@@ -46,6 +46,9 @@ public class HelloWorldController {
 				
 			}
 		}
+		String s="*Please enter valid input*";
+		model.addAttribute("message",s);
+		//	return "elite-members";
 		return "elite-members";
 	}
 	@RequestMapping("/process-Form")

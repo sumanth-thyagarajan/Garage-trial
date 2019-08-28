@@ -8,7 +8,7 @@ pageEncoding="ISO-8859-1"%>
 <title>Garage  Mechanics</title>
 </head>
 <body bgcolor="#F5F5F5">
-	<h3><font color="red">*You have successfully logged out </font></h3>
+	<h4><font color="red">*You have successfully logged out </font></h4>
 	<center>
 		<h2>Garage</h2>
 	</center>

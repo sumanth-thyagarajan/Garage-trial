@@ -6,8 +6,8 @@
 <meta charset="ISO-8859-1">
 <title>Process-form</title>
 </head>
-<body>
-<h2>Hello this is just a beta application</h2>
+<body bgcolor="#F5F5F5">
+<h2>Hello this is just a beta application</h2><hr>
 <br>
  ${message}
 </body>

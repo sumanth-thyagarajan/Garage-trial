@@ -11,7 +11,12 @@ public class Vehicle {
 	private String Address;
 	
 	public Vehicle() {
-		
+		Firstname="Sumanth";
+		Lastname="thyagarajan";
+		Gender="male";
+		Vehcat="truck";
+		Regno="TN88z8888";
+		Address="asd";
 	}
 	public String getFirstname() {
 		return Firstname;
@@ -51,16 +56,16 @@ public class Vehicle {
 	}
 	
 	String getMessage() {
-		return "<br>\nVehicle condition : Good and it is verified by the Experts";
+		return "<br><strong>Vehicle condition :</strong> Good and it is verified by the Experts";
 		
 	}
 	public String toString() {
-		return "First Name 		 	: " +Firstname+"<br>\n"+ 
-				"Last Name  		 	: " +Lastname+"<br>\n"+
-				"Gender			 	: " + Gender+"<br>\n"+ 
-				"Vehicle category 	: " + Vehcat +"<br>\n" +
-				"Registration Number	: " + Regno+"<br>\n"+ 
-				"Address				: " + Address+"<br>\n";
+		return "<strong>First Name 		 	: </strong>" +Firstname+"<br>\n"+ 
+				"<strong>Last Name  		 	: </strong>" +Lastname+"<br>\n"+
+				"<strong>Gender			 	: </strong>" + Gender+"<br>\n"+ 
+				"<strong>Vehicle category 	: </strong>" + Vehcat +"<br>\n" +
+				"<strong>Registration Number	: </strong>" + Regno+"<br>\n"+ 
+				"<strong>Address				: </strong>" + Address+"<br>\n";
 	}
 	
 }
