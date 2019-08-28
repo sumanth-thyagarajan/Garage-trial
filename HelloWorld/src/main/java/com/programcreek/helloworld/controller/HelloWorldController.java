@@ -60,7 +60,7 @@ public class HelloWorldController {
 		veh.setGender(request.getParameter("Gender"));
 		veh.setVehcat(request.getParameter("VehCat"));
 		veh.setRegno(request.getParameter("RegNo"));
-		veh.setAddress(request.getParameter("Address"));
+		veh.setAddress(request.getParameter("Doorno"),request.getParameter("Area"),request.getParameter("Districts"),request.getParameter("State"),request.getParameter("country"));
 		String s=""+veh+" "+veh.getMessage();
 		model.addAttribute("message",s);
 		return "process-form";

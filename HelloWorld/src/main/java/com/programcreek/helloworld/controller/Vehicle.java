@@ -34,13 +34,15 @@ public class Vehicle {
 		return Gender;
 	}
 	public void setGender(String gender) {
-		Gender = gender;
+		if(gender==null||gender.equals("")) {Gender="Not specified";}
+		else Gender = gender;
 	}
 	public String getVehcat() {
 		return Vehcat;
 	}
 	public void setVehcat(String vehcat) {
-		Vehcat = vehcat;
+		if(vehcat==null||vehcat.contentEquals("")) {Vehcat="Not specified";}
+		else Vehcat = vehcat;
 	}
 	public String getRegno() {
 		return Regno;
@@ -51,8 +53,13 @@ public class Vehicle {
 	public String getAddress() {
 		return Address;
 	}
-	public void setAddress(String address) {
-		Address = address;
+	public void setAddress(String doorno, String area, String district, String state, String country) {
+		if(doorno==null||doorno.equals(""))doorno="XX";
+		if(area==null||area.equals(""))area="XX";
+		if(district==null||district.equals(""))district="XX";
+		if(state==null||state.equals(""))state="XX";
+		if(country==null||country.equals(""))country="India";
+		Address = doorno+", "+area+", "+district+", "+state+", "+country;
 	}
 	
 	String getMessage() {
