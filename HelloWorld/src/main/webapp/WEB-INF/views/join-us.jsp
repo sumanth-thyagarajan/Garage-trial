@@ -6,7 +6,7 @@
 <title>Join-us</title>
 </head>
 <body bgcolor="#F5F5F5">
-	<form action="process-Form" method="get" >
+	<form action="process-form" method="get" >
 		<h3><strong>Sign-up  Form</strong></h3>
 		<hr>
 		<br>

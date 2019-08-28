@@ -1,11 +1,13 @@
 package com.programcreek.helloworld.controller;
  
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
- 
+
 @Controller
 public class HelloWorldController {
 	String message = "Welcome to Spring MVC!";
@@ -45,6 +47,20 @@ public class HelloWorldController {
 			}
 		}
 		return "elite-members";
+	}
+	@RequestMapping("/process-Form")
+	public String processForm(HttpServletRequest request, Model model)
+	{
+		Vehicle veh=new Vehicle();
+		veh.setFirstname(request.getParameter("Firstname"));
+		veh.setLastname(request.getParameter("Lastname"));
+		veh.setGender(request.getParameter("Gender"));
+		veh.setVehcat(request.getParameter("VehCat"));
+		veh.setRegno(request.getParameter("RegNo"));
+		veh.setAddress(request.getParameter("Address"));
+		String s=""+veh+" "+veh.getMessage();
+		model.addAttribute("message",s);
+		return "process-form";
 	}
 	@RequestMapping("/Logout")
 	public String viewLogout()
