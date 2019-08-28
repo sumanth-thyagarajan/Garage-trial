@@ -16,7 +16,7 @@ public class Vehicle {
 		Gender="male";
 		Vehcat="truck";
 		Regno="TN88z8888";
-		Address="asd";
+		Address="A1, City park, Trichy, Tamil Nadu, India";
 	}
 	public String getFirstname() {
 		return Firstname;

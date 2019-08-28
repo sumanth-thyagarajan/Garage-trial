@@ -65,6 +65,16 @@ public class HelloWorldController {
 		model.addAttribute("message",s);
 		return "process-form";
 	}
+	
+	@RequestMapping("/view-profile")
+	public String ViewEliteprofile( Model model)
+	{
+		Vehicle veh=new Vehicle();
+		String s=""+veh+veh.getMessage();
+		model.addAttribute("message",s);
+		return "view-profile";
+	}
+	
 	@RequestMapping("/Logout")
 	public String viewLogout()
 	{
