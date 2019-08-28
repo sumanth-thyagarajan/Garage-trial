@@ -7,7 +7,7 @@
 <title>Elite-view profile page</title>
 </head>
 <body bgcolor="#F5F5F5">
-<h2>Elite Proile</h2><hr>
+<h2>Elite Profile</h2><hr>
 ${message}
 </body>
 </html>
