@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Elite members Homepage</title>
+<title>Process-form</title>
 </head>
 <body bgcolor="#F5F5F5">
-<h3>This is just a beta web application</h2><hr>
-<h4><a href="view-profile">View Profile</a>
-<a href="Logout">Logout</a></h4>
+<h2>Hello this is just a beta application</h2><hr>
+<br>
+ ${message}
 </body>
 </html>
